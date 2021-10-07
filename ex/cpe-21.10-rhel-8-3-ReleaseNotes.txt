@@ -1,0 +1,1079 @@
+HPE Cray Programming Environment 21.10 Release Notes
+====================================================
+
+Abnormal Termination Processing (ATP) 3.14.6:
+================================================
+
+Release Date:
+--------------
+  September 2021
+
+
+Product Description:
+--------------------
+  Abnormal Termination Processing (ATP) is a system that
+  monitors user applications, and should an application
+  take a system trap, ATP preforms analysis on the dying
+  application. All of the stack backtraces of the
+  application processes are gathered into a merged
+  stack backtrace tree and written to disk as the file
+  "atpMergedBT.dot". The stack backtrace for the first process
+  to die is sent to stderr as is the number of the signal that
+  caused the death. If the core file size limit (RLIMIT_CORE)
+  is non-zero, a heuristically selected set of processes dump
+  their core.
+
+  atpMergedBT.dot can be viewed with 'statview', a component
+  of the STAT package (module load stat).  The merged stack
+  backtrace tree provides a concise, yet comprehensive, view
+  of what the application was doing at the time of its death.
+
+Purpose:
+---------
+  This release includes the following new features:
+    - Initial support for GPU kernel debugging on Nvidia GPUs
+      using CUDA-GDB.
+
+Product and OS Dependencies:
+-----------------------------
+  The ATP 3.14.6 release is supported on the following Cray systems:
+    - HPE/Cray XC systems with CLE release 7.0 or later
+    - HPE/Cray CS systems with CentOS/RH 8.0 or later
+    - HPE/Cray Shasta systems with SLES 15 service pack 1 or later
+    - HPE Apollo systems with Slurm or PBS Pro, and RH 8.0 or later
+    - Baymax systems with RH 8.0 or later
+
+  Product Dependencies:
+    - GCC 8.1.0 associated runtime libraries are required on all systems.
+    - Cray cray-cti rpm installed
+    - Cray cray-cdst-support rpm installed
+
+Documentation:
+---------------
+Type `man atp` with the atp module loaded to read the atp(1) man page.
+
+Installation instructions:
+--------------------------
+   Installation instructions for x86_64:
+   =============================================
+      rpm -ivh atp-3.14.6-20210915134658_c98e92f2-1.el8.x86_64.rpm
+
+      To make ATP 3.14.6 the default version of ATP, execute:
+      /opt/cray/pe/admin-pe/set_default_files/set_default_atp_3.14.6
+
+
+ Certain components, files or programs contained within this package or product are 
+ Copyright 2010-2021 Hewlett Packard Enterprise Development LP.
+
+CCDB 4.12.5:
+==================
+
+Release Date:
+--------------
+September 2021
+
+Product Description:
+--------------------
+CCDB, Cray's next generation debugging tool extends the comparative
+debugging capabilities of gdb4hpc with a Graphical User Interface (GUI)
+enabling programmers to compare corresponding data structures
+between two executing applications. Comparative debugging assists users with
+locating sections of code containing data deviations introduced by algorithm
+changes, compiler differences, and porting to new architectures/libraries.
+
+Some features of ccdb include:
+
+  * Side-by-side debugging session execution of two parallel applications
+
+  * Automatic creation of comparison statements for all local variables in
+    scope
+
+  * Type templates for structured data types to selectively compare members
+
+  * Warning/error epsilon tolerance values for floating point comparison
+
+  * PBS PRO, MOAB/TORQUE, and SLURM workload manager support
+
+Purpose:
+---------
+  This is a bug fix release.
+
+  - Added CRAY_CCDB_PREFIX and CRAY_CCDB_VERSION environment variables to modulefiles.
+
+
+Product and OS Dependencies:
+-----------------------------
+  The CCDB is supported on the following Cray systems.
+    - HPE/Cray XC systems with CLE 7.0 or later
+    - HPE/Cray CS systems with CentOS/RH 8.0 or later
+    - HPE/Cray Shasta systems with SLES 15 service pack 1 or later
+    - HPE Apollo systems with Slurm and RH 8.0 or later
+    - Baymax systems with RH 8.0 or later
+
+  Product Dependencies:
+    - gdb4hpc/4.10.x
+    - Cray cray-cti rpm installed
+    - Cray cray-cdst-support rpm installed
+
+
+Documentation:
+---------------
+Type `man ccdb` with the cray-ccdb module loaded to read the
+ccdb(1) man page.
+
+Documentation is available through CCDB from the 'Help'
+menu.
+
+Installation instructions:
+--------------------------
+
+      Installation instructions for .el8.x86_64:
+      =============================================
+        yum --assumeyes --nogpgcheck install cray-ccdb-4.12.5-20210915134906_c02908e-1.el8.x86_64.rpm
+
+        To make cray-ccdb 4.12.5 the default version of cray-ccdb, execute:
+        /opt/cray/pe/admin-pe/set_default_files/set_default_cray-ccdb_4.12.5
+
+
+Certain components, files or programs contained within this package or product are
+Copyright 2007-2021 Hewlett Packard Enterprise Development LP.
+
+CrayPE 2.7.11
+==============
+
+Release Date:
+--------------
+  October 2021 
+
+Purpose:
+--------
+  - Add support for PrgEnv-amd
+  - Bug Fix release 
+
+
+Bugs Fixed in This Release:
+-------------------------------------------
+  - CAST-27482 - gpu compile flag is wrong for CPE 21.09
+
+Dependencies:
+---------------------------------------------
+
+   The CrayPE 2.7.11 release is dependent on .pc files in the following
+   software products:
+     ATP 1.6.3 or later
+     FFTW 3.3.0.4 or later
+     FFTW 2.1.5.6 or later
+     Global Arrays 5.1.0.2 or later
+     HDF5 1.8.11 or later
+     iobuf 2.0.5 or later
+     LibSci 12.1.01 or later
+     MPT 6.0.2 or later
+     NetCDF 4.3.0 or later
+     Parallel-NetCDF 1.3.1.1 or later
+     PMI 4.0.1 or later
+     PETSc 3.4.2.0 or later
+     Trilinos 11.4.1.0 or later
+     TPSL 1.3.04 or later
+     TotalView 8.12-totalview-support-1.1.5 or later
+                                                                                
+Documentation:
+---------------
+  See manpages for cc, CC, ftn, intro_craype-api, intro_hugepages and pkg-config
+                                                                                
+  See section 2.6 Using Targeting Modules of the Cray Programming Environment
+  User's Guide (S-2529-116)
+                                                                                
+  See http://www.freedesktop.org/wiki/Software/pkg-config for a pkg-config
+  introduction.
+                                                                                
+Installation instructions:
+--------------------------
+      rpm -ivh  craype-2.7.11-202109212107.921224940d652-1.el8.x86_64.rpm 
+
+                                                                                
+ To make this the default version, execute:
+    /opt/cray/pe/admin-pe/set_default_files/set_default_craype_2.7.11
+    
+                                                                                
+Product description:
+--------------------
+CrayPE contains drivers, cc, CC, and ftn to compile for the CCE, PGI, GNU,
+and Intel Programming Environments.
+The craype-* targeting modules are also provided in this product.
+
+Certain components, files or programs contained within this package or product
+are Copyright 2013-2021 Hewlett Packard Enterprise Development LP.
+
+
+Craypkg-gen 1.3.19
+==============
+
+Release Date:
+-------------
+    October  2021
+
+Purpose:
+--------
+   - Enable support for 'mixed' compilers using Lmod. 
+ 
+Dependencies:
+-------------
+    The craypkg-gen 1.3.19 release is supported on the following Cray
+    systems running Cray Linux Environment (CLE) operating system:
+    o   Cray XC/XE/XK systems with CLE version 5.2 or later.
+ 
+    Driver support for integrating Third Party C, C++, and Fortran libraries
+    through .pc files using pkg-config is used in CrayPE 2.x and later
+
+
+Limitation:
+-----------
+    o  Library dependencies for static libraries are not added to the .pc files
+       for keywords Requires.private and Libs.private. A warning is issued by 
+       the craypkg-gen tool to advise users to add this information to the 
+       libraries .pc files.
+    o  RPM limits packages to 4GB
+ 
+Documentation:
+--------------
+    Man pages for craypkg-gen are found by executing ‘module load craypkg-gen’ 
+    and then ‘man craypkg-gen’ See 
+    http://www.freedesktop.org/wiki/Software/pkg-config for a pkg-config 
+    introduction.
+ 
+    Examples for creating modulefiles for Intel, PGI and Python are included in
+    the craypkg-gen ‘doc’ directory:
+        /opt/cray/craypkg-gen/1.3.19/doc/intel_example.txt
+        /opt/cray/craypkg-gen/1.3.19/doc/pgi_example.txt
+        /opt/cray/craypkg-gen/1.3.19/doc/python_example.txt
+ 
+Example:
+      As an example, the Intel 16.0.3.210 compiler was recently released.  
+      After installing the compiler the administrator creates a modulefile for
+      this release by executing the following commands:                   
+ 
+               # module load craypkg-gen
+               # craypkg-gen -m /opt/intel/compilers_and_libraries_2016.3.210
+ 
+        This version of the Intel compiler is made default by executing the 
+        command:
+               # /opt/admin-pe/set_default_craypkg/set_default_intel_16.0.3.210
+ 
+Installation instructions:
+--------------------------
+
+ rpm -ivh craypkg-gen-1.3.19-*-0.el8.202109161855.568fd71113a6b.x86_64.rpm
+
+ To change the product version to default after installation:
+ /opt/cray/pe/admin-pe/set_default_files/set_default_craypkg-gen_1.3.19
+
+Product description:
+    The craypkg-gen 1.3.19 utility provides the system administrator
+    a tool to integrate third party software with the Cray software stack. 
+    Craypkg-gen assists with integration by creating .pc files for C, C++, and
+    Fortran libraries, pkg-config enabled modulefiles and RPMs. 
+
+    The workflow for using craypkg-gen is
+        1) Build the open source software
+        2) Create .pc files for libraries
+        3) Create pkg-config enabled modulefiles
+        4) Customize pkg-config and modulefiles if needed
+        5) Package rpms
+        6) Install the rpms on the Cray system
+ 
+Certain components, files or programs contained within this package or product 
+are Copyright 2013-2021 Hewlett Packard Enterprise Development LP. 
+
+Cray Common Tools Interface (CTI) 2.15.6:
+======================================
+
+Release Date:
+--------------
+  September 2021
+
+
+Product Description:
+--------------------
+  Cray Common Tools Interface (CTI) is a library that abstracts debugger
+  tool support to a common interface regardless of the underlying
+  work load manager. It facilitates the staging of files and
+  the launch of tool daemons on the compute nodes associated
+  with a parallel job.
+
+Purpose:
+---------
+  This bugfix release resolves the following issues:
+    - Added CRAY_CTI_PREFIX and CRAY_CTI_VERSION environment variables to the modulefiles.
+
+Product and OS Dependencies:
+-----------------------------
+  The Cray CTI 2.15.6 release is supported on the following Cray systems:
+    - HPE/Cray XC systems with CLE 7.0 or later
+    - HPE/Cray CS systems with CentOS/RH 8.0 or later
+    - HPE/Cray Shasta systems with SLES 15 service pack 1 or later
+    - HPE Apollo systems with Slurm and RH 8.0 or later
+    - Baymax systems with RH 8.0 or later
+
+  Product Dependencies:
+    - GCC 8.1.0 associated runtime libraries are required on all systems.
+    - Cray cray-cdst-support rpm installed
+
+Documentation:
+---------------
+Currently the only documentation available is found in
+common_tools_fe.h, common_tools_be.h, and the tests in the 'tests'
+directory.
+
+Installation instructions:
+--------------------------
+
+   Installation instructions for x86_64:
+   =============================================
+      rpm -ivh cray-cti-2.15.6-2.el8.x86_64.rpm
+
+      To make cti 2.15.6 the default version of cray-cti, execute:
+      /opt/cray/admin-pe/set_default_files/set_default_cray-cti-2.15.6
+
+
+ Certain components, files or programs contained within this package or
+ product are Copyright 2010-2021 Hewlett Packard Enterprise Development LP
+
+Cray DSMML 0.2.2:
+==========================
+
+Release Date:
+-------------
+  October, 2021
+
+Product Information:
+--------------------
+DSMML is a stand-alone memory management library for maintaining distributed
+shared symmetric memory heaps for top level PGAS languages and libraries like
+Coarray Fortran, UPC, and OpenSHMEM. DSMML allows user libraries to create
+multiple symmetric heaps and share information with other libraries. Through
+DSMML, we could extract interoperability between PGAS programming models.
+
+Announcements, release informations, supported environments, and backward
+compatibility informations about this product can be viewed in the following
+location: https://pe-cray.github.io/cray-dsmml/
+
+Purpose:
+--------
+    Cray DSMML 0.2.2 supports the following features:
+
+    - Create symmetric heap segments for being used by PGAS languages and
+      libraries
+
+    - Allows options to allocate, deallocate memory buffers from previously
+      created symmetric heap segments
+
+    - Enables sharing information about the symmetric heap segments between
+      different programming models
+
+    - Added support for shared symmetric heap (SSHEAP) that can be used to
+    provide enhanced SMP data transport in user-libraries like SHMEM, CAF, UPC
+
+    The following features are fixed in Cray DSMML 0.2.2 when compared
+    to Cray DSMML 0.2.1:
+
+    - Internal bug fixes involving hugepage cleanups
+
+    Refer intro_dsmml(3) manpage for more information on the supported features
+    and syntax for different routines
+
+
+Product and OS Dependencies:
+----------------------------
+  The Cray DSMML 0.2.2 release is supported on the following
+  Cray systems:
+  * HPE Cray EX systems with CLE
+
+  Product and OS Dependencies by network type:
+  --------------------------------------------------+
+                              |       Shasta        |
+  ----------------------------+---------------------+
+        craype                | >= 2.7.3            |
+  ----------------------------+---------------------+
+
+  One or more compilers:
+  * AOCC 2.2 or later
+  * CCE 9.1 or later
+  * GNU 9.1 or later
+  * Intel 19.0 or later
+  * Nvidia 20.7 or later
+
+Documentation:
+--------------
+  Use the Cray DSMML man pages for more information on the library
+  functions and use intro_dsmml(3) man page for general information.
+
+  Use https://pe-cray.github.io/whitepapers/ for access to different
+  Cray DSMML specific whitepapers
+
+  Announcements, release informations, supported environments, and backward
+  compatibility informations about this product can be viewed in the following
+  location: https://pe-cray.github.io/cray-dsmml/
+
+Modulefile:
+-----------
+  module load cray-dsmml/0.2.2
+
+Certain components, files or programs contained within this package or
+product have the following Copyright:
+Copyright 2018-2021 Hewlett Packard Enterprise Development LP.
+
+
+gdb4hpc 4.13.6:
+======================================
+
+Release Date:
+--------------
+  September 2021
+
+
+Product Description:
+--------------------
+  gdb4hpc is a GDB-based parallel debugger used to debug applications compiled with
+  CCE, AOCC, GNU, and Intel Fortran, C and C++ compilers. It allows programmers to
+  either launch an application or attach to an already running application that
+  was launched on the system. Additionally, it provides comparative debugging
+  technology that enables programmers to compare data structures between two
+  executing applications. Comparative debugging should be used in conjunction
+  with the CCDB GUI tool accessed by loading the cray-ccdb module.
+
+  Some features of gdb include:
+
+  * Command line parallel debugger allows for launching/attaching applications.
+
+  * Utilizes process sets to operate on a subset of application ranks.
+
+  * GDB-like feel, also implements a gdbmode to enable a true parallel gdb.
+
+  * GPU debugging is supported for OpenMP 4.0+ GPU directives; OpenMP 5.0 on AMD
+      and Nvidia GPU's.
+
+  * Workload manager support via Common Tools Interface (cray-cti).
+
+Purpose:
+---------
+  This is bug fix release
+
+  - Fix potential double free during gdbmode command
+
+  - Fix crash when printing C++ vectors of structs that have vector members. 
+
+Product and OS Dependencies:
+-----------------------------
+  The gdb4hpc 4.13.6 is supported on the following Cray systems:
+    - HPE/Cray XC systems with CLE 7.0 or later
+    - HPE/Cray CS systems with CentOS/RH 8.0 or later
+    - HPE/Cray Shasta systems with SLES 15 service pack 1 or later
+    - HPE Apollo systems with Slurm and RH 8.0 or later
+    - Baymax systems with RH 8.0 or later
+
+  Product Dependencies:
+    - Cray cray-cti rpm installed
+    - Cray cray-cdst-support rpm installed
+
+Documentation:
+---------------
+Type `man gdb4hpc` with the gdb4hpc module loaded to read the gdb4hpc(1) man page.
+
+Simple usage examples are provided at the end.
+
+Also, type `help` at the gdb4hpc command line for more information on commands.
+
+Installation instructions:
+--------------------------
+
+   Installation instructions for x86_64:
+   =============================================
+      rpm -ivh gdb4hpc-4.13.6-20210928135337_146e9934-2.el8.x86_64.rpm
+
+      To make gdb4hpc 4.13.6 the default version of gdb4hpc, execute:
+      /opt/cray/pe/admin-pe/set_default_files/set_default_gdb4hpc_4.13.6
+
+
+Certain components, files or programs contained within this package or product are
+Copyright 2007-2021 Hewlett Packard Enterprise Development LP.
+
+modules 3.2.11.6 
+==================
+
+Release Date:
+-------------
+May, 2021
+
+
+Purpose:
+--------
+   - Add support for 'is-used' and 'is-avail' module commands.
+
+Documentation:
+---------------
+  See man-pages for module and modulefile.
+
+
+
+Cray MPICH 8.1.10:
+=======================================
+
+Release Date:
+-------------
+  September 23, 2021
+
+
+Purpose:
+--------
+  Cray MPICH 8.1.10 is based upon ANL MPICH 3.4a2 with support for libfabric
+  and is optimized for the Cray Programming Environment.
+    
+  Major Differences Cray MPICH 8.1.10 from the XC Cray MPICH include:
+
+      - Uses the new ANL MPICH CH4 code path and libfabric for network
+        support.
+
+      - Does not support -default64 mode for Fortran
+
+      - Does not support C++ language bindings
+
+  New Cray MPICH features for HPE Cray EX and Apollo systems:
+
+      - Cray MPICH uses the libfabric "verbs;ofi_rxm" provider by default.
+        This is the supported and optimized OFI libfabric provider for
+        Slingshot-10 and Apollo systems.
+
+      - Cray MPICH offers support for multiple NICs per node. Starting with
+        version 8.0.8, by default Cray MPICH will use all available NICs on
+        a node. Several rank-to-NIC assignment policies are supported. For
+        details on choosing a policy for assigning ranks to NICS, or for
+        selecting a subset of available NICs, please see the following
+        environment variables documented in the mpi man page.
+
+        MPICH_OFI_NIC_VERBOSE
+        MPICH_OFI_NIC_POLICY
+        MPICH_OFI_NIC_MAPPING
+        MPICH_OFI_NUM_NICS
+
+      - Enhancements to the MPICH_OFI_NIC_POLICY NUMA mode have been added.
+        Starting with version 8.0.14, if the user selects the NUMA policy,
+        the NIC closest to the rank is selected. A NIC no longer needs to
+        reside in the same numa node as the rank. If multiple NICs are
+        assigned to the same numa node, the local ranks will round-robin
+        between them. Numa distances are analyzed to select the closest NIC.
+
+      - Cray MPICH supports creating a full connection grid during MPI_Init.
+        By default, OFI connections between ranks are set up on demand. This
+        allows for optimal performance while minimizing memory requirements.
+        However, for jobs requiring an all-to-all communication pattern, it
+        may be beneficial to create all OFI connections in a coordinated
+        manner at startup. See the MPICH_OFI_STARTUP_CONNECT description in
+        the mpi man page.
+
+      - Cray MPICH supports runtime switching to the UCX netmod starting
+        with version 8.0.14. To do this load the craype-network-ucx module
+        and module swap between Cray-MPICH and Cray-MPICH-UCX modules.  For
+        more information including relevant environment variables reference
+        the intro_mpi man page with the Cray-MPICH-UCX module loaded.
+
+      - Lmod support for HPE Cray EX starting with Cray MPICH 8.0.16.
+
+
+Key Changes and Bugs Closed:
+----------------------------
+  Changes in Cray MPICH 8.1.10
+
+      - CAST-27236 - MPI_Gather failure with large buffer
+      - PE-37421 - Cray MPI Aggregator PFL failure for 250 OSTs, 128MB stripe unit, and cray_cb_write_lock_mode=2
+      - PE-37377 - Error in large message size OSU all to all test
+      - PE-37387 - Add gtl library path to CRAY_LD_LIBRARY path in Cray-MPICH module
+      - PE-37314 - hsa_amd_memory_lock error
+      - PE-37279 - Fixing non-deterministic deadlocks observed with Cray MPI's Async progress capability
+      - PE-37228 - Improve Cray MPI startup time (ZIATEST) at high scale on Slingshot
+      - PE-37224 - segmentation fault in MPI_Cancel() on a receive request that uses MPI_ANY_SOURCE with single node runs
+      - PE-37209 - Cray MPICH probe routines segfault if passed MPI_STATUS_IGNORE
+      - PE-37061 - Fatal error in PMPI_Alltoall
+      - PE-36969 - lmod modulepath error in Cray-MPICH AOCC module
+      - PE-36839 - lmod modulepath error in Cray-MPICH AMD module
+      - PE-36394 - Stall at 1KB on some inter-node transfers when using dynamic window creation
+      - PE-15859 - Implement a placement/topology aware rank re-ordering and MPI_CART_CREATE
+
+
+Product and OS Dependencies:
+----------------------------
+  The Cray MPICH 8.1.10 release is supported on the following HPE systems:
+  * HPE Cray EX systems with CLE
+  * HPE Apollo systems as part of the Cray Programming Environment
+
+  Product and OS Dependencies by network type:
+  --------------------------------------------------+
+                              |       Shasta        |
+  ----------------------------+---------------------+
+        craype                | >= 2.7.6            |
+  ----------------------------+---------------------+
+        cray-pals             | >= 1.0.6            |
+  ----------------------------+---------------------+
+        cray-pmi              | >= 6.0.1            |
+  ----------------------------+---------------------+
+        libfabric             | >= 1.9.0            |
+  ----------------------------+---------------------+
+
+  One or more compilers:
+  * AMD ROCM 4.3 or later
+  * AOCC 3.0 or later
+  * CCE 10.0 or later
+  * GNU 9.1 or later
+  * Intel 19.0 or later
+  * Nvidia 20.7 or later
+
+
+Notes and Limitations:
+----------------------
+  Limitations in Cray MPICH 8.1.10:
+
+      - Cray MPICH 8.1.10 can support only ~2040 simultaneous MPI
+        communicators.  This limit is less the XC Cray MPICH limit of
+        ~4090 simultaneous communicators.  Cray intends to raise the
+        limit in a future release of Cray MPICH for Shasta to at least
+        the XC limit.
+
+
+Documentation:
+--------------
+  For more information see the intro_mpi man page.
+
+
+Modulefile:
+-----------
+  module load cray-mpich/8.1.10
+
+
+License:
+--------
+  Except for the third party components and software licensed by HPE
+  through proprietary agreements, components, files or programs contained
+  within this package or product are Copyright -2021 Hewlett Packard
+  Enterprise Development LP.
+
+  Attribution notices for open source licensed software for this 
+  package are detailed in the file:
+  /opt/cray/pe/mpich/8.1.10/ATTRIBUTIONS
+=======
+Copyright -2021 Hewlett Packard Enterprise Development LP
+
+Cray PALS 1.1.0 for PE 21.10:
+=======================================
+
+Release Date:
+-------------
+    Oct 2021
+
+Purpose:
+--------
+
+    Cray Parallel Application Launch Service (PALS) is an application launcher for
+    Cray PE applications.
+
+Key Changes:
+------------
+
+    Added PMI_RANK, PMI_SIZE, etc environment variables
+    Fixed several JSON bugs in the PMIx code
+    Fixed the ability to send RPCs over 4k between the daemon & shepherd
+ 
+Documentation:
+--------------
+    For more information see aprun, mpiexec, palscmd, palsctrl, palsig, and palstat man page.
+
+Modulefile:
+-----------
+    module load cray-pals
+
+Installation instructions:
+--------------------------
+    rpm -ihv cray-pals-<version>-<date>.el8.x86_64.rpm
+    rpm -ihv cray-palsd-<version>-<date>.el8.x86_64.rpm
+
+Copyright 2021 Hewlett Packard Enterprise Development LP
+
+cray-papi
+=================
+
+Release date:
+-------------
+  February 2021
+
+Purpose:
+--------
+  New version of papi 6.0.0.10
+
+Documentation:
+--------------
+   Overview: https://bitbucket.org/icl/papi
+   Web Site: http://icl.utk.edu/papi
+
+Product description:
+--------------------
+  PAPI aims to provide the tool designer and application engineer with a
+  consistent interface and methodology for use of the performance counter
+  hardware found in most major microprocessors. PAPI enables software
+  engineers to see, in near real time, the relation between software
+  performance and processor events.
+
+Dependencies:
+-------------
+  For a list of software used when validating this version of
+  PAPI on Cray and HPE systems, see the HPE Cray Programming
+  Environment release announcements.
+
+Copyright 2015-2017,2019-2020 Hewlett Packard Enterprise Development LP
+
+
+Perftools 21.10.0
+===============
+ Release Date: October 07, 2021
+
+ Purpose:
+ ========
+   This is a feature and bugfix release for HPE Apollo 80, HPE Apollo 2000 Gen10 
+   Plus (x86), and HPE Cray EX supercomputer (Shasta) systems. This version of 
+   perftools supports CLE 7 on Cray XC systems, RHEL/CentOS 8 on Cray CS and HPE 
+   Apollo systems, and V1.3 and V1.4 on Shasta.
+
+ Important note:
+ ===============
+  When cpe-gcc-11.2.0 or cray-gcc-11.2.0 (or later) is installed on a system, 
+  ALL PREVIOUS VERSIONS OF PERFTOOLS WILL FAIL (see details below).
+
+ Key enhancements or changes from the previous release:
+ ======================================================
+  o Bugfix for AMD GPUs, some applications may fail to link due to
+    'cannot find -lcupti', even when CUDA is not installed, and there are no NVIDIA
+    GPUs on the machine. 
+  o Fix ==LO_MEMORY== appearing sometimes when profiling HIP codes
+  o PAPI 6.0.0.10 with SLES ROCm support.
+
+ Known Issues:
+ ============= 
+  o Hardware counter collection may fail on nodes with AMD GPUs. 
+  o Ranks per node may be incorrectly reported for compute nodes named similar to 
+    'x1000c2s3b1n0'.  Use 'pat_report -s ranks_per_node=X', where X is your known 
+    ranks per node, to work around this problem.
+  o After installing cpe-gcc-11.2.0 or cray-gcc-11.2.0 (or later), all Perftools 
+    versions prior to Perftools-21.09.0 will fail. There is no workaround for this. 
+    Cpe-gcc-11.2.0 and cray-gcc-11.2.0 are installed as part of the Cray PE-21.09 
+    and later releases.
+  o Perftools-lite-loops does not work with cce/11.0.1. 
+    Use cce/11.0.0 or 11.0.2 or later instead.
+  o Nvidia OpenMP target offload does not work with CCE 11. 
+    Compile your application with -fno-cray-omp-target-debug to use
+    CCE 11 with OpenMP target offload.  The issue is fixed in CCE 12.
+  o Affinity problems may occur on XC systems running PBS when using 
+    perftools with OpenMP codes.  Ensure that 'aprun -cc depth' is used 
+    in this situation.
+  o Some codes may not show user functions in pat_report when using the intel or 
+    gcc compilers. This is caused by problems with the dwarf being generated. In 
+    this case, users should add '-finstrument-functions' to their compiler flags, 
+    and rebuild. This will be addressed in a future release of perftools.
+  o Some applications built with gcc/11.2.0 may fail to produce usable experiment 
+    directories on SLES-based machines.  The workaround is to use gcc/10.3.0.  
+    This will be addressed in a future release of perftools.
+
+ Bugs Fixed:
+ ===========
+  
+ Dependencies:
+ =============
+  o A PDF reader (evince, acroread or okular) is required to use the 
+    app2 online help.
+  o For a list of software used when validating this version of 
+    perftools on Cray and HPE systems, see the HPE Cray Programming Environment
+    release announcements.
+
+ Installation instructions:
+ ==========================
+ For XC systems, please see the XC Series Software Installation and 
+ Configuration Guide (S-2559).
+
+ For CS systems, please see the CS System Programming Environments 
+ Installation Guide (S-2800).
+
+ For Apollo 80 systems, please see the HPE Cray Programming Environments
+ Installation Guide: Apollo 80 (ARM) System (S-0813).
+
+ For Apollo 2000 systems, please see the HPE Cray Programming Environments
+ Installation Guide: Apollo 2000 Gen10 Plus (x86) System (S-0812).
+
+ For HPE Cray EX (Shasta Architecture) systems, refer to the Cray Asynchronous 
+ Installer Guide (S-8003).
+
+ Installation of app2 remote client (+ server) on Mac systems:
+ -------------------------------------------------------------
+ Apprentice2Installer-21.10.0.dmg
+ RevealInstaller-21.10.0.dmg
+
+ The Cray Apprentice2 and Reveal installers for Mac are included in the
+ perftools-clients rpm, and placed in
+
+ $CRAYPAT_ROOT/share/desktop_installers/
+
+ on a Cray Shasta User Access Node (UAN) or on a Cray login node when the 
+ perftools software is installed.
+
+
+ Download the Cray Apprentice2 installer onto a desktop or laptop
+ running Mac OS El Capitan through Mojave. Double click on installer 
+ to begin installation.  The installer will walk you through the 
+ process for your system.
+
+ Installation of app2 remote client (+ server) on Windows 10 systems:
+ --------------------------------------------------------------------
+ Apprentice2Installer-21.10.0.exe
+
+ The Cray Apprentice2 installer for Windows is included in the
+ perftools-clients rpm, and placed in
+ 
+ $CRAYPAT_ROOT/share/desktop_installers/
+
+ on a Cray Shasta User Access Node (UAN) or on a Cray login node when the 
+ perftools software is installed.
+ Download the Cray Apprentice2 installer onto a desktop or laptop
+ running Windows 10. Double click on installer to begin installation.
+ The installer will walk you through the process for your system.
+
+ Documentation:
+ ==============
+ See the following man pages:
+   intro_craypat, pat_build, pat_help, pat_info, pat_report, pat_run, pat_view
+   grid_order, pat_opts
+
+   reveal, app2
+
+   perftools-base, perftools-lite, perftools-preload
+
+   hwpc, nwpc, accpc, uncore, cray_pm, papi_counters
+
+ Search for perftools on https://pubs.cray.com to access documentation
+ on Cray Performance Measurement and Analysis Tools
+
+ License:
+ ========
+ Except for the third party modules discussed below and software licensed
+ by HPE through proprietary agreements, components, files or programs
+ contained within this package or product are Copyright 2001-2021
+ Hewlett Packard Enterprise Development LP.
+
+ Attribution notices for open source licensed software contained in this
+ package are detailed in the file:
+ $CRAYPAT_ROOT/ATTRIBUTIONS_perftools.txt
+
+Cray PMI 6.0.14
+==============================================================================
+
+Release Date:
+--------------
+  September 22, 2021
+
+
+Purpose:
+--------
+  The Cray Process Manager Interface Library provides the interface between the
+  application launcher and other communication libraries such as MPICH and SHMEM.
+
+  Cray PMI 6.0.14 is optimized for the Cray Programming Environment.
+
+  New Cray PMI features for HPE Cray EX and Apollo systems:
+
+
+Key Changes and Bugs Closed:
+----------------------------
+  Bug fixes new to Cray PMI 6.0.14 include:
+
+      - PE-35661 - Add libpmi2 to pc file to provide all symbols at link time
+      - PE-37228 - Improve Cray MPI startup time at large scale on slingshot
+
+
+Product and OS Dependencies:
+----------------------------
+  The Cray PMI 6.0.14 release is supported on the following systems:
+  * HPE Cray EX systems with CLE
+  * HPE Apollo systems as part of the Cray Programming Environment
+
+  Product Dependencies:
+  ----------------------------------------+
+        cray-pals        | >= 1.0.6       |
+  -----------------------+----------------+
+        slurm            | >= 20.02       |
+  -----------------------+----------------+
+
+
+Notes and Limitations:
+----------------------
+
+
+Documentation:
+--------------
+  For more information see the intro_pmi man page.
+
+
+Modulefile:
+-----------
+  module load cray-pmi/6.0.14
+
+
+License:
+--------
+  Except for the third party components and software licensed by HPE
+  through proprietary agreements, components, files or programs contained
+  within this package or product are Copyright 2020-2021 Hewlett Packard
+  Enterprise Development LP.
+
+  Attribution notices for open source licensed software for this 
+  package are detailed in the file:
+  /opt/cray/pe/pmi/6.0.14/ATTRIBUTIONS
+
+Cray OpenSHMEMX 11.4.0.beta:
+===============================
+
+Release Date:
+-------------
+  October, 2021
+
+Purpose:
+--------
+  OpenSHMEM is a Partitioned Global Address Space (PGAS) library interface
+  specification, which is the culmination of a standardization effort among
+  many implementers and users of SHMEM programming model. SHMEM has a long
+  history as a parallel programming model on HPE Cray supercomputer systems.
+  For the past two decades SHMEM library implementation in HPE Cray systems
+  evolved through different generations. Cray OpenSHMEMX is a proprietary,
+  OpenSHMEM specification compliant SHMEM implementation for HPE Cray
+  product line.
+
+Key Changes:
+------------
+  Major differences in Cray OpenSHMEMX 11.4.0.beta from Cray OpenSHMEMX
+  version 11.3.3 includes the following:
+
+    - No new features were added, mostly internal bug fix release
+    - Changed the defaults of cetain internal env variables involved in 
+    FI_FENCE usage
+
+Bugs Closed:
+------------
+  The following bugs are fixed as part of the Cray OpenSHMEMX 11.4.0.beta
+  release:
+
+    - Internal code cleanup and bugfix
+
+
+Product and OS Dependencies:
+----------------------------
+  The Cray OpenSHMEMX 11.4.0.beta release is supported on the following
+  Cray systems:
+  * HPE Cray EX systems with CLE
+
+  Product and OS Dependencies by network type:
+  --------------------------------------------------+
+                              |       Shasta        |
+  ----------------------------+---------------------+
+        craype                | >= 2.7.3            |
+  ----------------------------+---------------------+
+        cray-pals             | >= 0.3.5            |
+  ----------------------------+---------------------+
+        cray-pmi              | >= 6.0.1            |
+  ----------------------------+---------------------+
+        libfabric             | >= 1.9.0            |
+  ----------------------------+---------------------+
+
+  One or more compilers:
+  * AOCC 2.2 or later
+  * CCE 9.1 or later
+  * GNU 9.1 or later
+  * Intel 19.0 or later
+  * Nvidia 20.7 or later
+
+Notes and Limitations:
+----------------------
+  Announcements, release information, supported environments, limitations,
+  usage models, and backward compatibility informations about this product
+  can be viewed in the following location:
+  https://pe-cray.github.io/cray-openshmemx/
+
+Documentation:
+--------------
+  Use the Cray OpenSHMEMX man pages for more information on the library
+  functions and use intro_shmem(3) man page for general information.
+
+  Initial support for Cray OpenSHMEMX man pages are derived from OpenSHMEM
+  standards specification document
+
+  Use https://pe-cray.github.io/whitepapers/ for access to different
+  Cray OpenSHMEMX specific whitepapers
+
+Modulefile:
+-----------
+  module load cray-openshmemx/11.4.0.beta
+
+License:
+--------
+  Components, files, and programs contained within this package or
+  product are Copyright Hewlett Packard Enterprise Development LP
+
+Cray-Stat 4.11.6
+=============
+
+Release Date:
+-------------
+  September 2021
+
+Purpose:
+--------
+  This is a bug fix release.
+
+  - Added support for gathering stack traces on an Nvidia GPU.
+
+    To enable, the environment variable STAT_GDB must be set to either
+    cuda-gdb, which will require cuda-gdb to be available in PATH.   Or it can
+    be set a specific debugger.  We suggest the version of cuda-gdb packaged
+    with gdb4hpc, as in:
+
+    export STAT_GDB=/opt/cray/pe/gdb4hpc/$GDB4HPC_VERSION/libexec/cuda110-gdb-guard
+
+    After which stat-cl would be called using the options: -w -G -i
+
+Product and OS Dependencies:
+----------------------------
+  The Cray-Stat 4.11.6 release is supported on the following Cray systems:
+    - HPE/Cray XC systems with CLE 7.0 or later
+    - HPE/Cray CS systems with CentOS/RH 8.0 or later
+    - HPE/Cray Shasta systems with SLES 15 service pack 1 or later
+    - HPE Apollo systems with Slurm and RH 8.0 or later
+    - Baymax systems with RH 8.0 or later
+
+  Product Dependencies:
+     - Cray cray-cti rpm installed
+     - Cray cray-cdst-support rpm installed
+
+
+Documentation:
+--------------
+  https://computing.llnl.gov/code/STAT/
+
+
+Installation Instructions:
+-------------
+
+  Installation Instructions for .el8.x86_64:
+  ------------------------------------------
+
+  yum --assumeyes --nogpgcheck install cray-stat-4.11.6-20210915144821_361755f8-1.el8.x86_64.rpm
+
+  To make this the default version of STAT, execute:
+   /opt/cray/pe/admin-pe/set_default_files/set_default_stat_4.11.6
+
+
+Certain components, files or programs contained within this package or product are
+Copyright 2007-2021 Hewlett Packard Enterprise Development LP.
+
+
