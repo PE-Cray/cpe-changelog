@@ -20,7 +20,7 @@ Release notes and changelogs for HPE Cray PE releases on EX supercomputing platf
 - [PE 21.09 - SLES 15 SP2-based](ex/cpe-21.09-sles15-sp2-FullReleaseNotes.txt)
 - [PE 21.08 - SLES 15 SP2-based](ex/cpe-21.08-sles15-sp2-FullReleaseNotes.txt)
 ####  
-- [PE 21.10 - RHEL 8.3-based](ex/cpe-21.11-rhel-8-3-FullReleaseNotes.txt)
+- [PE 21.11 - RHEL 8.3-based](ex/cpe-21.11-rhel-8-3-FullReleaseNotes.txt)
 - [PE 21.10 - RHEL 8.3-based](ex/cpe-21.10-rhel-8-3-FullReleaseNotes.txt)
 - [PE 21.09 - RHEL 8.3-based](ex/cpe-21.09-rhel-8-3-FullReleaseNotes.txt)
 
