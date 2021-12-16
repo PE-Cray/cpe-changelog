@@ -30,10 +30,10 @@ Release notes and changelogs for HPE Cray PE releases on EX supercomputing platf
 
 #### Cray EX - Additional PE Documentation
 
-- [HPE CPE Release Announcements](https://support.hpe.com/connect/s/product?language=en_US&ismnp=0&l5oid=1013083813&kmpmoid=1013083815&cep=on&manualsAndGuidesFilter=66000006%2C66000002)
-- [HPE CPE Installation Guides](https://support.hpe.com/connect/s/product?language=en_US&ismnp=0&l5oid=1013083813&kmpmoid=1013083815&cep=on&manualsAndGuidesFilter=66000034)
-- [HPE CPE User Guides](https://support.hpe.com/connect/s/product?language=en_US&ismnp=0&l5oid=1013083813&kmpmoid=1013083815&cep=on&manualsAndGuidesFilter=66000035)
-- [HPE Cray Fortran Reference Manual (S-3901)](https://support.hpe.com/hpesc/public/docDisplay?docId=a00115296en_us)
-- [HPE Cray Clang C and C++ Quick Reference (S-2179)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00115299en_us)
-- [HPE Cray Compiling Environment Release Overview (S-5212)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00115300en_us)
-- [HPE Performance Analysis Tools User Guide (S-8014)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00114942en_us&page=Cray_Performance_Measurement_and_Analysis_Tools_CPMAT.html)
+- [HPE CPE Release Announcements](https://support.hpe.com/connect/s/product?language=en_US&ismnp=0&l5oid=1013083813&kmpmoid=1013083815&cep=on&manualsAndGuidesFilter=66000035&manualsAndGuidesQuery=TITLE%3AAvailability%20%20%20TITLE%3AProgramming)
+- [HPE CPE Installation Guides](https://support.hpe.com/connect/s/product?language=en_US&ismnp=0&l5oid=1013083813&kmpmoid=1013083815&cep=on&manualsAndGuidesFilter=66000035&manualsAndGuidesQuery=TITLE%3AInstallation%20%20%20TITLE%3AProgramming)
+- [HPE CPE User Guides](https://support.hpe.com/connect/s/product?language=en_US&ismnp=0&l5oid=1013083813&kmpmoid=1013083815&cep=on&manualsAndGuidesFilter=66000035&manualsAndGuidesQuery=TITLE%3AUser%20%20%20TITLE%3AProgramming)
+- [HPE Cray Fortran Reference Manual (S-3901)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119423en_us)
+- [HPE Cray Clang C and C++ Quick Reference (S-2179)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119421en_us)
+- [HPE Cray Compiling Environment Release Overview (S-5212)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119422en_us)
+- [HPE Performance Analysis Tools User Guide (S-8014)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00118397en_us)
