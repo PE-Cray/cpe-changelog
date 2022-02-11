@@ -1,6 +1,6 @@
 ## HPE Cray Programming Environment Release Notes and Changelogs
 
-Release notes and changelogs for HPE Cray PE releases on EX supercomputing platforms.
+Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputing platforms.
 
 #### Cray EX - PE Release Notes For Changed Packages
 
@@ -41,3 +41,14 @@ Release notes and changelogs for HPE Cray PE releases on EX supercomputing platf
 - [HPE Cray Clang C and C++ Quick Reference (S-2179)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119421en_us)
 - [HPE Cray Compiling Environment Release Overview (S-5212)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119422en_us)
 - [HPE Performance Analysis Tools User Guide (S-8014)](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00118397en_us)
+
+#### Cray XC (x86) - CDT Release Notes For Changed Packages
+
+- [CDT 22.02 - SLES 15 SP2-based](xc/XC-PE-22.02-07-ReleaseNotes.txt)
+- [CDT 21.09 - SLES 15 SP2-based](xc/XC-PE-21.09-04-ReleaseNotes.txt)
+
+#### Cray XC (x86) - CDT Release Notes For All Packages
+
+- [CDT 22.02 - SLES 15 SP2-based](xc/XC-PE-22.02-07-FullReleaseNotes.txt)
+- [CDT 21.09 - SLES 15 SP2-based](xc/XC-PE-21.09-04-FullReleaseNotes.txt)
+
