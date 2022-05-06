@@ -2,8 +2,10 @@
 
 Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputing platforms.
 
-#### Cray EX - PE Release Notes For Changed Packages
+### Cray EX - PE Release Notes For Changed Packages
 
+#### SLES 15
+- [PE 22.05 - SLES 15 SP3-based](ex/cpe-22.05-sles15-sp3-ReleaseNotes.txt)
 - [PE 22.04 - SLES 15 SP2-based](ex/cpe-22.04-sles15-sp2-ReleaseNotes.txt)
 - [PE 22.03 - SLES 15 SP2-based](ex/cpe-22.03-sles15-sp2-ReleaseNotes.txt)
 - [PE 22.02 - SLES 15 SP2-based](ex/cpe-22.02-sles15-sp2-ReleaseNotes.txt)
@@ -12,7 +14,8 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 - [PE 21.10 - SLES 15 SP2-based](ex/cpe-21.10-sles15-sp2-ReleaseNotes.txt)
 - [PE 21.09 - SLES 15 SP2-based](ex/cpe-21.09-sles15-sp2-ReleaseNotes.txt)
 - [PE 21.08 - SLES 15 SP2-based](ex/cpe-21.08-sles15-sp2-ReleaseNotes.txt)
-####
+#### RHEL 8
+- [PE 22.05 - RHEL 8.4-based](ex/cpe-22.05-rhel-8-4-ReleaseNotes.txt)
 - [PE 22.04 - RHEL 8.4-based](ex/cpe-22.04-rhel-8-4-ReleaseNotes.txt)
 - [PE 22.03 - RHEL 8.4-based](ex/cpe-22.03-rhel-8-4-ReleaseNotes.txt)
 - [PE 22.02 - RHEL 8.3-based](ex/cpe-22.02-rhel-8-3-ReleaseNotes.txt)
@@ -21,8 +24,10 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 - [PE 21.10 - RHEL 8.3-based](ex/cpe-21.10-rhel-8-3-ReleaseNotes.txt)
 - [PE 21.09 - RHEL 8.3-based](ex/cpe-21.09-rhel-8-3-ReleaseNotes.txt)
 
-#### Cray EX - PE Release Notes For All Packages
+### Cray EX - PE Release Notes For All Packages
 
+#### SLES 15
+- [PE 22.05 - SLES 15 SP3-based](ex/cpe-22.05-sles15-sp3-FullReleaseNotes.txt)
 - [PE 22.04 - SLES 15 SP2-based](ex/cpe-22.04-sles15-sp2-FullReleaseNotes.txt)
 - [PE 22.03 - SLES 15 SP2-based](ex/cpe-22.03-sles15-sp2-FullReleaseNotes.txt)
 - [PE 22.02 - SLES 15 SP2-based](ex/cpe-22.02-sles15-sp2-FullReleaseNotes.txt)
@@ -31,7 +36,8 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 - [PE 21.10 - SLES 15 SP2-based](ex/cpe-21.10-sles15-sp2-FullReleaseNotes.txt)
 - [PE 21.09 - SLES 15 SP2-based](ex/cpe-21.09-sles15-sp2-FullReleaseNotes.txt)
 - [PE 21.08 - SLES 15 SP2-based](ex/cpe-21.08-sles15-sp2-FullReleaseNotes.txt)
-####
+#### RHEL 8
+- [PE 22.05 - RHEL 8.4-based](ex/cpe-22.05-rhel-8-4-FullReleaseNotes.txt)
 - [PE 22.04 - RHEL 8.4-based](ex/cpe-22.04-rhel-8-4-FullReleaseNotes.txt)
 - [PE 22.03 - RHEL 8.4-based](ex/cpe-22.03-rhel-8-4-FullReleaseNotes.txt)
 - [PE 22.02 - RHEL 8.3-based](ex/cpe-22.02-rhel-8-3-FullReleaseNotes.txt)
@@ -52,10 +58,12 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 
 #### Cray XC (x86) - CDT Release Notes For Changed Packages
 
+- [CDT 22.05 - SLES 15 SP2-based](xc/XC-PE-22.05-03-ReleaseNotes.txt)
 - [CDT 22.02 - SLES 15 SP2-based](xc/XC-PE-22.02-07-ReleaseNotes.txt)
 - [CDT 21.09 - SLES 15 SP2-based](xc/XC-PE-21.09-04-ReleaseNotes.txt)
 
 #### Cray XC (x86) - CDT Release Notes For All Packages
 
+- [CDT 22.05 - SLES 15 SP2-based](xc/XC-PE-22.05-03-FullReleaseNotes.txt)
 - [CDT 22.02 - SLES 15 SP2-based](xc/XC-PE-22.02-07-FullReleaseNotes.txt)
 - [CDT 21.09 - SLES 15 SP2-based](xc/XC-PE-21.09-04-FullReleaseNotes.txt)
