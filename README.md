@@ -85,6 +85,7 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 - [13.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119423en_us)
 
 #### HPE Performance Analysis Tools User Guide (S-8014)
+- [22.12](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00128927en_us)
 - [22.09](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00126776en_us)
 - [22.06](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00124796en_us)
 - [22.05](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00123563en_us)
