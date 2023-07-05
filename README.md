@@ -84,19 +84,23 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 
 ### User Guides
 #### HPE Cray Compiling Environment Release Overview (S-5212)
+- [16.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=dp00002961en_us)
 - [15.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00127983en_us)
 - [14.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00123568en_us)
 - [13.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119422en_us)
 #### HPE Cray Clang C and C++ Quick Reference (S-2179)
+- [16.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=dp00002960en_us)
 - [15.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00127981en_us)
 - [14.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00123566en_us)
 - [13.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119421en_us)
 #### HPE Cray Fortran Refrence Manual (S-3901)
+- [16.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=dp00002958en_us)
 - [15.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00127982en_us)
 - [14.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00123567en_us)
 - [13.0](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00119423en_us)
 
 #### HPE Performance Analysis Tools User Guide (S-8014)
+- [23.05](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=dp00002962en_us)
 - [22.12](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00128927en_us)
 - [22.09](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00126776en_us)
 - [22.06](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=a00124796en_us)
