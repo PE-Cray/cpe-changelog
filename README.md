@@ -5,6 +5,7 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 ### Cray EX - PE Release Notes For Changed Packages
 
 #### SLES 15
+- [PE 24.03 - SLES 15 SP5-based](ex/cpe-24.03-sles15-sp5-ReleaseNotes.txt)
 - [PE 23.12 - SLES 15 SP5-based](ex/cpe-23.12-sles15-sp5-ReleaseNotes.txt)
 - [PE 23.09 - SLES 15 SP4-based](ex/cpe-23.09-sles15-sp4-ReleaseNotes.txt)
 - [PE 23.05 - SLES 15 SP4-based](ex/cpe-23.05-sles15-sp4-ReleaseNotes.txt)
@@ -26,6 +27,7 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 - [PE 21.09 - SLES 15 SP2-based](ex/cpe-21.09-sles15-sp2-ReleaseNotes.txt)
 - [PE 21.08 - SLES 15 SP2-based](ex/cpe-21.08-sles15-sp2-ReleaseNotes.txt)
 #### RHEL 8
+- [PE 24.03 - RHEL 8.8-based](ex/cpe-24.03-rhel-8-8-ReleaseNotes.txt)
 - [PE 23.12 - RHEL 8.7-based](ex/cpe-23.12-rhel-8-7-ReleaseNotes.txt)
 - [PE 23.09 - RHEL 8.7-based](ex/cpe-23.09-rhel-8-7-ReleaseNotes.txt)
 - [PE 23.05 - RHEL 8.6-based](ex/cpe-23.05-rhel-8-6-ReleaseNotes.txt)
@@ -49,6 +51,7 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 ### Cray EX - PE Release Notes For All Packages
 
 #### SLES 15
+- [PE 24.03 - SLES 15 SP5-based](ex/cpe-24.03-sles15-sp5-FullReleaseNotes.txt)
 - [PE 23.12 - SLES 15 SP5-based](ex/cpe-23.12-sles15-sp5-FullReleaseNotes.txt)
 - [PE 23.09 - SLES 15 SP4-based](ex/cpe-23.09-sles15-sp4-FullReleaseNotes.txt)
 - [PE 23.05 - SLES 15 SP4-based](ex/cpe-23.05-sles15-sp4-FullReleaseNotes.txt)
@@ -70,6 +73,7 @@ Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputin
 - [PE 21.09 - SLES 15 SP2-based](ex/cpe-21.09-sles15-sp2-FullReleaseNotes.txt)
 - [PE 21.08 - SLES 15 SP2-based](ex/cpe-21.08-sles15-sp2-FullReleaseNotes.txt)
 #### RHEL 8
+- [PE 24.03 - RHEL 8.8-based](ex/cpe-24.03-rhel-8-8-FullReleaseNotes.txt)
 - [PE 23.12 - RHEL 8.7-based](ex/cpe-23.12-rhel-8-7-FullReleaseNotes.txt)
 - [PE 23.09 - RHEL 8.7-based](ex/cpe-23.09-rhel-8-7-FullReleaseNotes.txt)
 - [PE 23.05 - RHEL 8.6-based](ex/cpe-23.05-rhel-8-6-FullReleaseNotes.txt)
