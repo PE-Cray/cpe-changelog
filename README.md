@@ -1,3 +1,7 @@
+# This repository has been deprecated, please visit [HPE Cray Programming Environment Docs](https://cpe.ext.hpe.com/docs/) for the latest CPE release notes and documentation.
+
+---
+
 ## HPE Cray Programming Environment Release Notes and Changelogs
 
 Release notes and changelogs for HPE Cray PE releases on EX and XC supercomputing platforms.
